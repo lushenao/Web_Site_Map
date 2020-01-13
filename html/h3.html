@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .pg-header {
+            height: 60px;
+            line-height: 60px;
+            font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+            /*background-color: red;*/
+        }
+
+        .pg-login {
+            height: 20px;
+            line-height: 20px;
+            /*margin: 0 auto;*/
+            background-color: #EAF2D3;
+        }
+
+        .pg-login-line {
+            width: 1230px;
+            margin: 0 auto;
+            color: #999;
+
+            /*background-color: red;*/
+        }
+
+        .pg-login-line-font {
+            float: right;
+            font-size: 5px;
+
+        }
+
+        .pg-login-line-font:hover {
+            color: #8E236B;
+        }
+
+        .pg-body {
+            height: 610px;
+            padding-top: 1px;
+            /*line-height: 80px;*/
+            background-color: #eeeeee;
+            /*display: flex;*/
+            align-items: center; /*定义body的元素垂直居中*/
+            justify-content: center; /*定义body的里的元素水平居中*/
+        }
+
+        .pg-body-line {
+            width: 96%;
+            line-height: 40px;
+            /*background-color: #eeeeee;*/
+            margin: 0 auto;
+            margin-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        .pg-link {
+            border: 2px solid #dfe2e5;
+            line-height: 30px;
+            color: #2F4F4F;
+            display: inline-block;
+            width: 180px;
+
+            /*justify-content: center;*/
+            padding: 0px 60px 0px 11px;
+            /*margin: 0px 20px 0px 0px;*/
+
+
+        }
+
+        .div1 {
+            /*display: flex;*/
+            justify-content: center; /*定义body的里的元素水平居中*/
+            margin: 0 auto;
+            background: white;
+            width: 95%;
+            height: 85%;
+            line-height: 80%;
+            border: 1px solid #dfe2e5;
+            border-radius: 10px;
+            overflow: auto;
+            /*text-align: center;*/
+            /*line-height: 200px;*/
+
+        }
+
+        .pg-link-title {
+            color: #3299CC;
+            font-weight: bold;
+        }
+
+        .pg-bottom {
+            height: 28px;
+            background-color: ;
+            margin: 0 auto;
+        }
+
+        .pg-bottom-line {
+            height: 30px;
+            line-height: 30px;
+            width: 1320px;
+            margin: 0 auto;
+        }
+
+        .url {
+            display: block;
+            width: 240px;
+            height: auto;
+        }
+
+        #navigator {
+            /*display: flex;*/
+            justify-content: center; /*定义body的里的元素水平居中*/
+            margin: 15px auto;
+            margin-bottom: 10px;
+            /*margin-top: 10px;*/
+            background: white;
+            width: 95%;
+            /*height: 10%;*/
+            line-height: 1px;
+
+            border: 1px solid #dfe2e5;
+            /*border-radius: 10px;*/
+            overflow: auto;
+            /*padding: 0px 60px 0px 10px;*/
+
+            /*background: white;*/
+            /*font-size: 16px;*/
+            /*margin-top: 20px;*/
+            /*margin-bottom: 0px;*/
+            /*box-shadow: rgb(0, 0, 0) 0px -1px 12px -4px;*/
+            /*padding-top: 0px;*/
+            /*padding-left: 0px;*/
+            /*text-align: center;*/
+            /*font-family: 微软雅黑, 宋体, Arial;*/
+
+        }
+
+        #navigator ul li a {
+            display: inline-block;
+            float: none;
+        }
+
+        #nav {
+
+            height: 60px;
+            background: url(logo.png) no-repeat;
+            background-size: 38px 38px;
+            background-position: 550px 10px;
+        }
+
+        .url:hover {
+            color: red;
+        }
+
+        #navList {
+            /*min-height: 30px;*/
+            float: left;
+            display: inline;
+        }
+
+        #navigator ul {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            float: left;
+            list-style-type: none;
+        }
+
+        #navigator ul li a {
+            display: inline-block;
+            float: none;
+        }
+
+        #navList a {
+            display: block;
+            width: 10em;
+            height: 5px;
+            float: left;
+            text-align: center;
+            padding-top: 19px;
+        }
+
+        #navigator ul li {
+            display: inline-block;
+            height: 40px;
+        }
+        #navigator ul li:hover {
+            background-color: #0099CC;
+        }
+        .menu{
+            /*height: 100%;*/
+            text-decoration：none;
+            font-weight:bold;
+            color: #2C3E50;
+
+        }
+        a {text-decoration: none}
+
+        .separator{
+            border-bottom:1px dashed #dfe2e5;
+            margin-bottom: 2px;
+        }
+
+        .get_top{
+            /*width: 40px;*/
+
+            line-height: 12px;
+            border: 1px solid #dfe2e5;
+            position: fixed;
+            bottom: 72px;
+            right: 60px;
+            color: #2C3E50;
+            font-size: 18px;
+
+        }
+
+        #div1 div a:link {
+ font-size: 20px;
+ color: #2C3E50;
+ text-decoration: none;
+}
+#div1 div a:visited {
+ font-size: 20px;
+ color: #2C3E50;
+ text-decoration: none;
+}
+#div1 div a:hover {
+ font-size: 20px;
+ color: #999999;
+ text-decoration: underline;
+}
+
+
+
+
+
+    </style>
+</head>
+
+<body style="margin: 0 auto">
+
+<div class="pg-header">
+    <div id="nav" style="text-align: center;font-size: 30px;color: #2F4F4F">
+        江苏高院网站导航
+    </div>
+</div>
+
+<div class="pg-login">
+    <div class="pg-login-line">
+        <div class="pg-login-line-font">忘记密码</div>
+        <div class="pg-login-line-font">管理员登录&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+    </div>
+</div>
+
+<div class="pg-body">
+
+    <div id="navigator">
+        <ul id="navList">
+            <li><a class="menu" href="h1.html">ASR实施</a></li>
+            <li><a class="menu" href="h2.html">云平台运维</a></li>
+            <li><a class="menu" href="h3.html">常用工具</a></li>
+
+        </ul>
+    </div>
+
+    <div id ="div1" class="div1">
+        <div class="get_top" ><a href="#pg-body-line">返回<br></br>顶部</a></div>
+
+
+
+
+        <div id="pg-body-line" class="pg-body-line">
+            <span class="pg-link-title">1、云平台ASR系统-生产环境</span>
+            <div class="separator"></div>
+            <div class="pg-link"><a class="url" href="http://baidu.com">智慧庭审系统</a></div>
+            <div class="pg-link">旧庭审系统</div>
+            <div class="pg-link">云平台ASR-APP系统</div>
+            <div class="pg-link">云平台ASR-SDK-用户端</div>
+            <div class="pg-link">云平台ASR-SDK-管理端</div>
+        </div>
+
+        <div class="pg-body-line">
+            <span class="pg-link-title">2、江苏高院ASR系统-生产环境</span>
+            <div class="separator"></div>
+            <span class="pg-link">智慧审委会系统</span>
+            <span class="pg-link">旧庭审系统</span>
+            <span class="pg-link">智慧庭审系统</span>
+        </div>
+        <div class="pg-body-line">
+            <span class="pg-link-title">3、淮安市ASR系统-生产环境</span>
+            <div class="separator"></div>
+            <span class="pg-link">旧庭审系统</span>
+            <span class="pg-link">ASR大屏展示系统</span>
+        </div>
+        <div class="pg-body-line">
+            <span class="pg-link-title">4、宿迁ASR系统-生产环境</span>
+            <div class="separator"></div>
+            <span class="pg-link">视频点播系统</span>
+        </div>
+        <div class="pg-body-line">
+            <span class="pg-link-title">5、法务云盘系统-生产环境</span>
+            <div class="separator"></div>
+            <span class="pg-link">江苏法务云盘系统</span>
+            <span class="pg-link">浙江法务云盘系统</span>
+        </div>
+        <div class="pg-body-line">
+            <span class="pg-link-title">5、法务云盘系统-生产环境</span>
+            <div class="separator"></div>
+            <span class="pg-link">江苏法务云盘系统</span>
+            <span class="pg-link">浙江法务云盘系统</span>
+        </div>
+        <div class="pg-body-line">
+            <span class="pg-link-title">5、法务云盘系统-生产环境</span>
+            <div class="separator"></div>
+            <span class="pg-link">江苏法务云盘系统</span>
+            <span class="pg-link">浙江法务云盘系统</span>
+        </div>
+        <div class="pg-body-line">
+            <span class="pg-link-title">5、法务云盘系统-生产环境</span>
+            <div class="separator"></div>
+            <span class="pg-link">江苏法务云盘系统</span>
+            <span class="pg-link">浙江法务云盘系统</span>
+        </div>
+    </div>
+
+</div>
+<div class="pg-bottom">
+    <div class="pg-bottom-line">
+        <div style="float: left;font-size: 12px">关于我们&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+        <div style="float: left;font-size: 12px">版权声明&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+        <div style="float: right;font-size: 12px">联系方式：1595129532798</div>
+        <div style="float: right;font-size: 12px">作者：SkyLu&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+    </div>
+</div>
+
+</body>
+</html>
