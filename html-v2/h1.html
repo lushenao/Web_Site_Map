@@ -16,16 +16,30 @@
         }
 
         #header {
+            /*position: relative;*/
             height: 90px;
             line-height: 90px;
         }
 
+        #logo{
+            /*position: absolute;*/
+            float: left;
+            width: 38px;
+            height: 38px;
+            margin-left: 37.7%;
+            margin-right: 20px;
+            margin-top: 15px;
+
+
+        }
+
         #title {
+            float: left;
             height: 70px;
             line-height: 70px;
-            text-align: center;
             font-size: 30px;
             color: #2F4F4F;
+
 
         }
 
@@ -90,7 +104,7 @@
             text-decoration: none;
             font-weight: bold;
             color: #2C3E50;
-            width: 160px;
+            width: 16%;
         }
 
         #website {
@@ -100,7 +114,7 @@
             height: 85%;
             border: 1px solid #dfe2e5;
             border-radius: 15px;
-            overflow: scroll;
+            overflow-y: scroll;
             margin-top: 10px;
 
         }
@@ -113,7 +127,7 @@
         }
 
         #website ul li {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         .separator {
@@ -159,13 +173,18 @@
     <!--    标题块开始-->
     <div id="header">
         <!--        网站标题开始-->
-        <div id="title">江苏高院网站导航</div>
+        <img id="logo" src="logo.png">
+        <div id="title">
+            <span >江苏高院网站导航</span>
+        </div>
+                <div style="clear: both"></div>
         <!--        网站标题结束-->
         <!--        管理员登录按钮开始-->
         <div id="login">
             <span class="login-span button" style="padding-right: 20px;top: 10px">管理员登录</span>
             <span class="login-span button">忘记密码</span>
         </div>
+
         <!--        管理员登录按钮结束-->
 
     </div>
@@ -249,11 +268,9 @@
                     <div class="link"><a class="url" href="http://baidu.com">智慧庭审系统</a></div>
                     <div class="link"><a class="url" href="http://baidu.com">智慧庭审系统</a></div>
                 </li>
-
-
             </ul>
-
         </div>
+        <!--            网址内容结束-->
 
 
     </div>
